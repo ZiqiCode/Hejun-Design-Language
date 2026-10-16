@@ -5,12 +5,15 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>项目名称</title>
   <style>
+    @font-face{font-family:"HarmonyOS Sans SC";font-style:normal;font-weight:400;font-display:swap;src:url("../fonts/HarmonyOS_Sans_SC_Regular.ttf") format("truetype")}
+@font-face{font-family:"HarmonyOS Sans SC";font-style:normal;font-weight:500;font-display:swap;src:url("../fonts/HarmonyOS_Sans_SC_Medium.ttf") format("truetype")}
+@font-face{font-family:"HarmonyOS Sans SC";font-style:normal;font-weight:700;font-display:swap;src:url("../fonts/HarmonyOS_Sans_SC_Bold.ttf") format("truetype")}
     :root{--hejun-brand:#B33734;--hejun-brand-dark:#A02D1D;--hejun-text:#313131;--hejun-paper:#FCFFFD;--hejun-surface:#F9FAFF;--hejun-line:#D9D9D9;--hejun-sand:#DDC8B5;--hejun-gold:#DBB451;--hejun-teal:#77BAAE;--hejun-blue:#5770AA;--hejun-muted:#6C6C6B;--hejun-font:"HarmonyOS Sans SC","Noto Sans CJK SC","Source Han Sans SC","Microsoft YaHei",sans-serif}
     *{box-sizing:border-box}body{margin:0;color:var(--hejun-text);background:var(--hejun-paper);font:17px/1.7 var(--hejun-font)}
-    .wrap{max-width:1120px;margin:auto;padding:0 40px}header .wrap{display:flex;align-items:center;justify-content:space-between;min-height:100px;gap:24px}.logo{width:132px;height:auto;display:block}.wordmark{font-size:13px;letter-spacing:.18em;color:var(--hejun-brand);font-weight:600}
-    .hero{background:var(--hejun-brand);color:#fff;padding:72px 0 78px}.eyebrow{font-size:14px;letter-spacing:.12em;margin:0 0 20px}h1{font-size:clamp(32px,5vw,52px);line-height:1.25;letter-spacing:.05em;font-weight:600;margin:0 0 24px}.hero p:last-child{max-width:680px;margin:0;opacity:.95}
+    .wrap{max-width:1120px;margin:auto;padding:0 40px}header .wrap{display:flex;align-items:center;justify-content:space-between;min-height:100px;gap:24px}.logo{width:132px;height:auto;display:block}.wordmark{font-size:13px;letter-spacing:.18em;color:var(--hejun-brand);font-weight:500}
+    .hero{background:var(--hejun-brand);color:#fff;padding:72px 0 78px}.eyebrow{font-size:14px;letter-spacing:.12em;margin:0 0 20px}h1{font-size:clamp(32px,5vw,52px);line-height:1.25;letter-spacing:.05em;font-weight:500;margin:0 0 24px}.hero p:last-child{max-width:680px;margin:0;opacity:.95}
     main{padding:20px 0 64px}section{padding:40px 0 16px}h2{font-size:27px;line-height:1.35;margin:0 0 24px;border-left:5px solid var(--hejun-brand);padding-left:16px}h3{font-size:20px;margin:0 0 12px}.lead{font-size:21px;max-width:850px;margin:0 0 16px}.muted{color:var(--hejun-muted)}p{margin:0 0 18px}.split{display:grid;grid-template-columns:1fr 1fr;gap:48px}.summary{border-top:1px solid var(--hejun-line);padding:24px 0;margin:20px 0 0}.summary strong{color:var(--hejun-brand)}
-    .table-scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:16px;text-align:left}caption{text-align:left;font-weight:600;margin:0 0 12px}th{background:var(--hejun-brand);color:#fff;font-weight:500}th,td{padding:14px 16px;border-bottom:1px solid var(--hejun-line);vertical-align:top}tbody tr:nth-child(even){background:var(--hejun-surface)}.source{font-size:13px;color:var(--hejun-muted);margin-top:12px}footer{border-top:1px solid var(--hejun-line);padding:24px 0;color:var(--hejun-muted);font-size:13px}a{color:var(--hejun-brand-dark)}a:focus-visible{outline:2px solid var(--hejun-brand);outline-offset:4px}
+    .table-scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:16px;text-align:left}caption{text-align:left;font-weight:500;margin:0 0 12px}th{background:var(--hejun-brand);color:#fff;font-weight:500}th,td{padding:14px 16px;border-bottom:1px solid var(--hejun-line);vertical-align:top}tbody tr:nth-child(even){background:var(--hejun-surface)}.source{font-size:13px;color:var(--hejun-muted);margin-top:12px}footer{border-top:1px solid var(--hejun-line);padding:24px 0;color:var(--hejun-muted);font-size:13px}a{color:var(--hejun-brand-dark)}a:focus-visible{outline:2px solid var(--hejun-brand);outline-offset:4px}
     @media(max-width:640px){.wrap{padding:0 24px}header .wrap{min-height:82px}.logo{width:112px}.wordmark{font-size:10px;letter-spacing:.08em}.hero{padding:48px 0}.split{grid-template-columns:1fr;gap:20px}h2{font-size:24px}section{padding-top:32px}th,td{min-width:130px;padding:12px}.lead{font-size:19px}}
     @page{size:A4;margin:18mm}@media print{body{font-size:11pt;background:white}.wrap{max-width:none;padding:0}header .wrap{min-height:20mm}.logo{width:28mm}.hero{background:white;color:var(--hejun-text);padding:12mm 0;border-top:2pt solid var(--hejun-brand);border-bottom:1pt solid var(--hejun-line)}h1{font-size:28pt}h2{font-size:18pt;break-after:avoid}h3{break-after:avoid}section{padding-top:7mm}.split{display:block}.table-scroll{overflow:visible}table{font-size:10pt}th{background:var(--hejun-sand);color:var(--hejun-text)}tr{break-inside:avoid}thead{display:table-header-group}footer{font-size:9pt}a{color:inherit}*{print-color-adjust:exact;-webkit-print-color-adjust:exact}}
     @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
@@ -24,6 +27,77 @@
     <section aria-labelledby="analysis"><h2 id="analysis">分析与建议</h2><div class="split"><div><h3>现状与问题</h3><p>填写现状及其证据，说明问题对项目目标的影响。</p></div><div><h3>建议与边界</h3><p>填写与问题对应的建议，保留适用条件及尚待验证的假设。</p></div></div></section>
     <section aria-labelledby="plan"><h2 id="plan">工作安排</h2><div class="table-scroll" role="region" aria-label="工作安排表" tabindex="0"><table><caption>阶段与交付物</caption><thead><tr><th scope="col">阶段</th><th scope="col">工作内容</th><th scope="col">交付物</th></tr></thead><tbody><tr><th scope="row">研究与诊断</th><td>按本项目范围补充</td><td>按约定填写</td></tr><tr><th scope="row">方案与实施</th><td>按本项目范围补充</td><td>按约定填写</td></tr></tbody></table></div><p class="source">来源：填写实际资料名称、日期和口径。</p></section>
   </main>
-  <footer><div class="wrap">项目名称 · 版本与日期待填写</div></footer>
+  <footer><div class="wrap">项目名称 · 版本与日期待填写<br>本材料使用 HarmonyOS Sans Fonts · Copyright 2021 Huawei Device Co., Ltd.</div></footer>
+<!-- HarmonyOS Sans Fonts License Agreement
+License Notice
+
+Copyright 2021 Huawei Device Co., Ltd.
+
+HarmonyOS Sans Fonts Software is licensed under HarmonyOS Sans Fonts License Agreement.
+
+
+
+--------------------------------------------------------------------------------
+
+HarmonyOS Sans Fonts License Agreement
+
+
+
+THIS HARMONYOS SANS FONTS LICENSE AGREEMENT ("AGREEMENT") IS A LEGAL AGREEMENT BETWEEN YOU (EITHER A SINGLE INDIVIDUAL, OR SINGLE LEGAL ENTITY) AND HUAWEI DEVICE CO., LTD.( "LICENSOR")FOR THE USE OF THE HARMONYOS SANS FONTS ACCOMPANYING THIS AGREEMENT.BY DOWNLOADING,COPYING OR OTHERWISE USING HARMONYOS SANS FONTS YOU INDICATE THAT YOU AGREE TO BE BOUND BY ALL OF THE TERMS OF THIS AGREEMENT. IF YOU DO NOT AGREE TO THE TERMS OF THIS AGREEMENT, YOU MAY NOT DOWNLOAD, COPY OR OTHERWISE USE THE HARMONYOS SANS FONTS, AND YOU SHALL PROMPTLY DESTROY AND DELETE ALL THE HARMONYOS SANS FONTS.
+
+
+
+1.Definition
+
+"HarmonyOS Sans Fonts" shall mean the collection of fonts software components provided by Licensor under this Agreement and clearly marked as "HarmonyOS¬ Sans".
+
+
+
+"YOU" shall mean an individual or legal entity exercising permissions granted by this Agreement.
+
+
+
+2.GRANT OF LICENSE
+
+
+
+Subject to the terms and conditions of this Agreement, Licensor hereby grant YOU a non-transferable, non-exclusive, royalty-free, revocable, worldwide copyright license to use,copy, merge, embed, bundle, redistribute and/or sell unmodified copies of HarmonyOS Sans Fonts with any software except for fonts software，subject to the  following conditions:
+
+1)YOU shall make a prominent notice in the software to state that HarmonyOS Sans Fonts are used.
+
+2)YOU may not make any modifications to HarmonyOS Sans Fonts or any of their individual components.
+
+3)Neither HarmonyOS Sans Fonts nor any of their individual components may be redistributed or sold in a stand-alone base. This limitation does not apply to any work created by using HarmonyOS Sans Fonts. You can freely distribute or sell your work, such as materials, logos, application software etc. created by using HarmonyOS Sans Fonts.
+
+4)YOU shall retain the copyright notice and this Agreement in any copies of HarmonyOS Sans Fonts.
+
+
+
+3.Termination
+
+This Agreement will be automatically terminated if YOU breach any of this Agreement.
+
+
+
+4.NO WARRANTY
+
+YOU AGREE THAT THE HARMONYOS SANS FONTS ARE PROVIDED BY LICENSOR ON AN "AS IS" BASIS. LICENSOR MAKES NO WARRANTY, EXPRESSED OR IMPLIED OR STATUTORY, WITH RESPECT TO ANY OF THE HARMONYOS SANS FONTS, INCLUDING WITHOUT LIMITATION, ANY IMPLIED WARRANTIES OF MERCHANTABILITY, SATISFACTORY QUALITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT.
+
+
+
+5.NO LIABILITY
+
+
+
+IN NO EVENT SHALL LICENSOR BE LIABLE FOR ANY DIRECT OR INDIRECT, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES (INCLUDING WITHOUT LIMITATION, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) ARISING IN ANY WAY OUT OF THE USE OF OR INABILITY TO USE HARMONYOS SANS FONTS, WHETHER UNDER THEORY OF CONTRACT, TORT (INCLUDING NEGLIGENCE), STRICT LIABILITY OR OTHER LEGAL THEORY, EVEN IF LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+
+YOU EXPRESSLY ASSUME ALL LIABILITIES AND RISKS FOR USE OF HARMONYOS SANS FONTS. SHOULD THE HARMONYOS SANS FONTS PROVE DEFECTIVE, YOU ASSUME THE ENTIRE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
+
+
+
+
+-->
 </body>
 </html>

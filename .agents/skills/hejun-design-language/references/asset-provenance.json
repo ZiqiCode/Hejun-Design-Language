@@ -17,6 +17,41 @@
       "bytes": 52069
     },
     {
+      "path": "assets/fonts/HarmonyOS_Sans_SC_Bold.ttf",
+      "sha256": "43a424b85e47fb53a17b3b32026a71801f86f8e022ca6798d186b47d39fa5f01",
+      "bytes": 8158996
+    },
+    {
+      "path": "assets/fonts/HarmonyOS_Sans_SC_Light.ttf",
+      "sha256": "dd366290b40861bc6ced85801e850ab66d6fe4c5b33bc43095a9747fa29288d8",
+      "bytes": 8336364
+    },
+    {
+      "path": "assets/fonts/HarmonyOS_Sans_SC_Medium.ttf",
+      "sha256": "6ed1553edccddc48eb27ff25d134a4a715cf54211238d4840b3038576cba1944",
+      "bytes": 8227312
+    },
+    {
+      "path": "assets/fonts/HarmonyOS_Sans_SC_Regular.ttf",
+      "sha256": "297b088424be212207df2ce8b98e335468b782aa6b96832af0b8b773d711e2b1",
+      "bytes": 8261128
+    },
+    {
+      "path": "assets/fonts/LICENSE-readable.txt",
+      "sha256": "fc6ffe641428d9cece8dc3cfaba87fd437e4d024370e8acd6f141c5845919c02",
+      "bytes": 3349
+    },
+    {
+      "path": "assets/fonts/LICENSE.txt",
+      "sha256": "b2ffec0e6269ee41c3b5fc0345ab37600b46d66ebea6c9c58ff37f517bdfa164",
+      "bytes": 32768
+    },
+    {
+      "path": "assets/fonts/source.json",
+      "sha256": "ae0c7d8434df7837192b7ab1394804d0158c18cc93d14770466b77c706d1d16b",
+      "bytes": 1577
+    },
+    {
       "path": "assets/logos/hejun-group-wordmark.png",
       "sha256": "1352f6dcd02fe331e1584dfdb321da88b6dcf7b75eb71f9a63f048ee62c5f383",
       "bytes": 4200
@@ -28,13 +63,13 @@
     },
     {
       "path": "assets/previews/html-desktop.png",
-      "sha256": "05a651c7ff87313fcdb853a7309e38a73f3ea081bf1db195e07d9f655a686bd7",
-      "bytes": 127215
+      "sha256": "2d7cec69e42f7a448bcfc3d3f90cdb99c6fac50a08f29c97c1e6e79157f57d19",
+      "bytes": 134979
     },
     {
       "path": "assets/previews/html-mobile.png",
-      "sha256": "61dd60a811c6eb34d991ea34dbc6b1caad55f208e2a053716c1dcf1bb6036b10",
-      "bytes": 116220
+      "sha256": "2314a9f3579d16279b1a4a9274024b5326b8a98b9cd012c8a8d28a907623bb0e",
+      "bytes": 123352
     },
     {
       "path": "assets/previews/official-slide-1.png",
@@ -88,13 +123,13 @@
     },
     {
       "path": "assets/templates/hejun-starter.html",
-      "sha256": "a798895e0cb97560bfad59225406623a1ae582ddfde511b589ef649cdf0d4439",
-      "bytes": 5451
+      "sha256": "cb8a60807e8a3be8ceeb05a4c9b002f7c8f2ae226464089af6ce686709eb860c",
+      "bytes": 9429
     },
     {
       "path": "assets/tokens.json",
-      "sha256": "404f7aaadc3afd576a248965ea1899678ea08a7d48e5a0c3a362b8b0b2c825bc",
-      "bytes": 1926
+      "sha256": "b3958f62c0d0596971e31a115ae34548dd648554a5ef4a486dbcc7be9d16d605",
+      "bytes": 2149
     }
   ]
 }

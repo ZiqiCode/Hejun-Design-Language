@@ -1,0 +1,71 @@
+{
+  "network_requests": 0,
+  "source_standalone_png": "identical",
+  "evidence": [
+    {
+      "file": "index.html",
+      "faces": [
+        {
+          "family": "HarmonyOS Sans SC",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "HarmonyOS Sans SC",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "HarmonyOS Sans SC",
+          "weight": "700",
+          "status": "loaded"
+        }
+      ],
+      "heading_fonts": [
+        {
+          "familyName": "HarmonyOS Sans SC",
+          "postScriptName": "HarmonyOS_Sans_SC_Medium",
+          "isCustomFont": true,
+          "glyphCount": 6
+        }
+      ]
+    },
+    {
+      "file": "和君字体验证_Hejun_Standalone.html",
+      "faces": [
+        {
+          "family": "HarmonyOS Sans SC",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "HarmonyOS Sans SC",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "HarmonyOS Sans SC",
+          "weight": "700",
+          "status": "loaded"
+        }
+      ],
+      "heading_fonts": [
+        {
+          "familyName": "HarmonyOS Sans SC",
+          "postScriptName": "HarmonyOS_Sans_SC_Medium",
+          "isCustomFont": true,
+          "glyphCount": 6
+        }
+      ]
+    }
+  ],
+  "pdf_test": {
+    "engine": "PyMuPDF",
+    "font": "HarmonyOS Sans SC Regular",
+    "font_file": "HarmonyOS_Sans_SC_Regular.ttf",
+    "full_embedded_font_bytes_match_original": true,
+    "sha256": "297b088424be212207df2ce8b98e335468b782aa6b96832af0b8b773d711e2b1",
+    "searchable_chinese": true,
+    "system_installation": false
+  }
+}

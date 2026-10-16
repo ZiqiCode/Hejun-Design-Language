@@ -29,7 +29,7 @@
 
 新版空白模板有显式 `HarmonyOS Sans SC Light` 20 pt 文本；主题仍含 Calibri/宋体的默认继承配置，不能将继承字体误认为品牌推荐。
 
-使用已安装并适用于交付用途的 HarmonyOS Sans SC Regular/Medium/Light。正文不使用 Light。没有可用字体时检查 Noto Sans CJK SC、思源黑体或系统中文字体，并记录替代后的换行差异。字体许可依具体字体文件和使用方式核实。材料使用说明提到字体风险及鸿蒙字体建议，属于来源说明，不是本 Skill 的法律结论。提供的文件夹未发现字体安装包，因此不附带字体二进制。
+优先从 `assets/fonts/` 加载原版 HarmonyOS Sans SC Regular/Medium/Bold；Light 仅用于适当的大字，正文不使用 Light。2026-10-16 已从华为官方包补充字体与完整许可。输入材料最初没有字体文件，不代表当前仓库没有。加载、Office 嵌入和 PDF 验证见 [字体工作流](font-workflow.md)。仅在制作工具确实无法加载时选择替代字体并说明限制。材料使用说明的字体风险表述属于来源说明，不是本 Skill 的法律结论。
 
 ## 构图和页型
 

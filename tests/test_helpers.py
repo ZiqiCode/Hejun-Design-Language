@@ -81,6 +81,29 @@ class HelpersTest(unittest.TestCase):
         for key, value in colors.items():
             self.assertIn('--hejun-' + key.replace('_', '-') + ': ' + value + ';', result.stdout)
 
+    def test_bundled_fonts_match_official_manifest(self):
+        import hashlib
+        import json
+        fonts = SKILL / 'assets/fonts'
+        manifest = json.loads((fonts / 'source.json').read_text(encoding='utf-8'))
+        for item in manifest['files']:
+            data = (fonts / item['file']).read_bytes()
+            self.assertEqual(hashlib.sha256(data).hexdigest(), item['sha256'])
+            self.assertEqual(len(data), item['bytes'])
+        self.assertEqual(hashlib.sha256((fonts / 'LICENSE.txt').read_bytes()).hexdigest(), manifest['license_sha256'])
+
+    def test_initializer_copies_font_and_licenses_for_standalone(self):
+        out = self.root / 'fonts-deliverable'
+        command = [sys.executable, str(SCRIPTS / 'init_deliverable.py'), str(out), '--title', '字体检查']
+        result = subprocess.run(command, capture_output=True)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        source = (out / 'index.html').read_text(encoding='utf-8')
+        self.assertIn('assets/fonts/HarmonyOS_Sans_SC_Regular.ttf', source)
+        self.assertIn('HarmonyOS Sans Fonts License Agreement', source)
+        self.assertTrue((out / 'assets/fonts/LICENSE.txt').exists())
+        self.assertEqual((out / 'assets/fonts/HarmonyOS_Sans_SC_Regular.ttf').read_bytes(),
+                         (SKILL / 'assets/fonts/HarmonyOS_Sans_SC_Regular.ttf').read_bytes())
+
 
 if __name__ == '__main__':
     unittest.main()

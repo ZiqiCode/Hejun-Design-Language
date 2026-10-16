@@ -19,7 +19,7 @@
 ## 环境与限制
 
 - bundled render_docx.py 因环境没有 LibreOffice soffice.exe 无法运行；诊断后改用本机 Microsoft Word 导出 PDF，再渲染为 PNG。没有将未执行的 LibreOffice 检查写成通过。
-- 示例 Word 使用本次已安装的 Microsoft YaHei 字体；HarmonyOS Sans SC 未提供字体文件，未测试该字体在其他机器上的排版。字体文件均未随仓库分发。
+- 初版 Word 示例使用 Microsoft YaHei。后续已补充官方 HarmonyOS Sans SC 字体，当前 Word starter 和其 PDF 参考仍保留初版；新增字体的验证见下方记录。不将旧版渲染记录当作鸿蒙字体的 Office 验证。
 - PPT 复用原官方模板，不声称把整页图片组成的 V2026 集团简介恢复成可编辑正文。
 - 历史文件做结构清点与抽样视觉观察，不是全部 1,147 页的逐页视觉审核。
 - 单文件打包器仅支持文档化的静态资源形式，拒绝未支持结构；不解析任意 JavaScript 内的资源请求。
@@ -35,3 +35,29 @@ python .agents/skills/hejun-design-language/scripts/build_standalone_html.py /ne
 ```
 
 初始化和打包命令拒绝覆盖已有输出。需要重跑时选择新的临时输出位置。
+
+
+## 2026-10-16 字体补充验证
+
+- 从华为官方包提取 Light、Regular、Medium、Bold 四个 TTF，逐个与 ZIP 内原字节比较，SHA-256 一致；原始许可不变。source.json 记录下载地址和原包散列。
+- 四个字体的 OS/2.fsType 均为 8（Editable Embedding）。没有转换字体格式、修改原 TTF 或子集化。
+- Microsoft Edge headless 在未系统安装鸿蒙字体的情况下加载网页本地 TTF；Regular 400、Medium 500、Bold 700 三个 FontFace 均为 loaded。
+- 经 Chrome DevTools Protocol 检查 h1 实际使用 HarmonyOS Sans SC、isCustomFont=true、glyphCount>0。不是仅检查 CSS 声明。
+- 阻断 HTTP/HTTPS 网络后，源文件和离线单文件截图完全一致；390 px 窄屏无文档横向溢出，表格可滚动；查看了新版桌面与窄屏 PNG。
+- PyMuPDF 直接从原版 Regular TTF 生成测试 PDF，无需系统安装。提取 PDF 内字体流，与原版 TTF 字节完全相同，中文可搜索；测试页已渲染查看。该测试不表示现有 Word 参考 PDF 已改为鸿蒙字体。
+- 辅助脚本回归现为 8 项通过，新增原版字体/许可散列和初始化时字体复制检查。
+- 本次没有验证 Word/PPT 的无系统安装字体加载或字体嵌入，不承诺所有 Office 阅读器免安装编辑。旧 Word starter 和 PDF 参考保留初版微软雅黑。
+- 详细浏览器及 PDF 证据见 `.agents/skills/hejun-design-language/references/font-validation.json`。
+
+
+## 2026-10-16 字体补充验证
+
+- 从华为官方包提取 Light、Regular、Medium、Bold 四个 TTF，逐个与 ZIP 内原字节比较，SHA-256 一致；原始许可不变。source.json 记录下载地址和原包散列。
+- 四个字体的 OS/2.fsType 均为 8（Editable Embedding）。没有转换字体格式、修改原 TTF 或子集化。
+- Microsoft Edge headless 在未系统安装鸿蒙字体的情况下加载网页本地 TTF；Regular 400、Medium 500、Bold 700 三个 FontFace 均为 loaded。
+- 经 Chrome DevTools Protocol 检查 h1 实际使用 HarmonyOS Sans SC、isCustomFont=true、glyphCount>0。不是仅检查 CSS 声明。
+- 阻断 HTTP/HTTPS 网络后，源文件和离线单文件截图完全一致；390 px 窄屏无文档横向溢出，表格可滚动；查看了新版桌面与窄屏 PNG。
+- PyMuPDF 直接从原版 Regular TTF 生成测试 PDF，无需系统安装。提取 PDF 内字体流，与原版 TTF 字节完全相同，中文可搜索；测试页已渲染查看。该测试不表示现有 Word 参考 PDF 已改为鸿蒙字体。
+- 辅助脚本回归现为 8 项通过，新增原版字体/许可散列和初始化时字体复制检查。
+- 本次没有验证 Word/PPT 的无系统安装字体加载或字体嵌入，不承诺所有 Office 阅读器免安装编辑。旧 Word starter 和 PDF 参考保留初版微软雅黑。
+- 详细浏览器及 PDF 证据见 `.agents/skills/hejun-design-language/references/font-validation.json`。

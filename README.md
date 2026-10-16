@@ -4,7 +4,7 @@
 
 支持 PPT、Word、PDF、HTML 的制作和排版改版。默认采用 **和君红 V2026**，历史青蓝风格按需求延续。包含官方空白 PPT、原始 Logo、主题色 token、推导 Word/HTML starter、格式指南及辅助脚本。
 
-> 本项目是从材料提炼的工作规范，并非和君品牌部门发布的完整 VI 手册。Word、HTML 和推荐字号等扩展规则均注明为推导值。字体未随仓库分发。
+> 本项目是从材料提炼的工作规范，并非和君品牌部门发布的完整 VI 手册。Word、HTML 和推荐字号等扩展规则均注明为推导值。现已随排版工具配套提供华为官方原版 HarmonyOS Sans SC 字体，保留完整许可与来源校验。
 
 ## 在 Codex 中安装
 
@@ -43,6 +43,22 @@ python <skill-installer目录>/scripts/install-skill-from-github.py --repo ZiqiC
 
 “替换原位置”只在具体任务要求时执行。Skill 不会自动上传附件、联系客户或发布网页。
 
+## 不安装字体如何使用
+
+仓库配套包含 HarmonyOS Sans SC Light、Regular、Medium、Bold 四个原版 TTF，及原始许可、可读许可和来源 SHA-256。没有进行字体格式转换或字形子集化。
+
+- **HTML**：starter 通过 `@font-face` 加载配套字体。初始化脚本自动复制字体和许可；离线打包器将完整 TTF 嵌入单文件，读者不需要安装字体。常用三种字重会增加单文件约 33 MB（Base64 后），需要 Light 时再添加它。
+- **PDF**：制作工具从字体文件加载，并在导出时完整嵌入所用字体；验收时检查 PDF 的真实字体与嵌入状态。仅设置字体名称不足以证明嵌入。
+- **Word / PPT**：制作环境必须支持加载该字体。可用任务级字体目录或进程内加载时优先采用；不能把仓库中存在 TTF 等同于 Office 已加载。交付时使用支持的 Office/文档引擎完整嵌入字体，并检查文件包。接收端是否支持嵌入字体仍取决于具体软件。不要无提示改用微软雅黑。
+
+不自动安装到系统，也不承诺所有 Word/PPT 阅读器都能免安装编辑。已有 Word starter/PDF 参考保留此前的微软雅黑版本；使用时按 [字体工作流](.agents/skills/hejun-design-language/references/font-workflow.md) 重新应用并验证。
+
+可在通用 prompt 中加入：
+
+```text
+请先加载仓库 assets/fonts 中的原版 HarmonyOS Sans SC 字体。HTML 使用 @font-face，PDF 完整嵌入，Word/PPT 使用支持字体加载与完整嵌入的制作工具。不要仅因系统未安装就改用微软雅黑；如工具确实不支持，明确说明限制与替代方案。保留字体许可，不修改或子集化字体文件。
+```
+
 ## 内容与证据
 
 - [Skill 入口](.agents/skills/hejun-design-language/SKILL.md)
@@ -60,6 +76,6 @@ python <skill-installer目录>/scripts/install-skill-from-github.py --repo ZiqiC
 
 ## 权利说明
 
-和君品牌名称、Logo、背景和原始模板的权利归各自权利人。本项目不授予第三方使用、转售或再许可这些品牌资产的权利。字体按实际文件许可使用；不捆绑来源未核实的字体。
+和君品牌名称、Logo、背景和原始模板的权利归各自权利人。本项目不授予第三方使用、转售或再许可这些品牌资产的权利。本工具使用 HarmonyOS Sans Fonts。Copyright 2021 Huawei Device Co., Ltd. 字体以官方许可随本工具配套分发，保持原文件不变，不作独立字体下载服务或单独转售；详见 [字体许可](.agents/skills/hejun-design-language/assets/fonts/LICENSE-readable.txt)。
 
 结构参考 [DeepStone Design Language](https://github.com/lajayliu2-ops/deepstone-design-language)，和君规范、素材映射与辅助代码重新编写。此仓库未设置覆盖品牌素材的通用开源许可。
