@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>项目名称</title>
+  <style>
+    :root{--hejun-brand:#B33734;--hejun-brand-dark:#A02D1D;--hejun-text:#313131;--hejun-paper:#FCFFFD;--hejun-surface:#F9FAFF;--hejun-line:#D9D9D9;--hejun-sand:#DDC8B5;--hejun-gold:#DBB451;--hejun-teal:#77BAAE;--hejun-blue:#5770AA;--hejun-muted:#6C6C6B;--hejun-font:"HarmonyOS Sans SC","Noto Sans CJK SC","Source Han Sans SC","Microsoft YaHei",sans-serif}
+    *{box-sizing:border-box}body{margin:0;color:var(--hejun-text);background:var(--hejun-paper);font:17px/1.7 var(--hejun-font)}
+    .wrap{max-width:1120px;margin:auto;padding:0 40px}header .wrap{display:flex;align-items:center;justify-content:space-between;min-height:100px;gap:24px}.logo{width:132px;height:auto;display:block}.wordmark{font-size:13px;letter-spacing:.18em;color:var(--hejun-brand);font-weight:600}
+    .hero{background:var(--hejun-brand);color:#fff;padding:72px 0 78px}.eyebrow{font-size:14px;letter-spacing:.12em;margin:0 0 20px}h1{font-size:clamp(32px,5vw,52px);line-height:1.25;letter-spacing:.05em;font-weight:600;margin:0 0 24px}.hero p:last-child{max-width:680px;margin:0;opacity:.95}
+    main{padding:20px 0 64px}section{padding:40px 0 16px}h2{font-size:27px;line-height:1.35;margin:0 0 24px;border-left:5px solid var(--hejun-brand);padding-left:16px}h3{font-size:20px;margin:0 0 12px}.lead{font-size:21px;max-width:850px;margin:0 0 16px}.muted{color:var(--hejun-muted)}p{margin:0 0 18px}.split{display:grid;grid-template-columns:1fr 1fr;gap:48px}.summary{border-top:1px solid var(--hejun-line);padding:24px 0;margin:20px 0 0}.summary strong{color:var(--hejun-brand)}
+    .table-scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:16px;text-align:left}caption{text-align:left;font-weight:600;margin:0 0 12px}th{background:var(--hejun-brand);color:#fff;font-weight:500}th,td{padding:14px 16px;border-bottom:1px solid var(--hejun-line);vertical-align:top}tbody tr:nth-child(even){background:var(--hejun-surface)}.source{font-size:13px;color:var(--hejun-muted);margin-top:12px}footer{border-top:1px solid var(--hejun-line);padding:24px 0;color:var(--hejun-muted);font-size:13px}a{color:var(--hejun-brand-dark)}a:focus-visible{outline:2px solid var(--hejun-brand);outline-offset:4px}
+    @media(max-width:640px){.wrap{padding:0 24px}header .wrap{min-height:82px}.logo{width:112px}.wordmark{font-size:10px;letter-spacing:.08em}.hero{padding:48px 0}.split{grid-template-columns:1fr;gap:20px}h2{font-size:24px}section{padding-top:32px}th,td{min-width:130px;padding:12px}.lead{font-size:19px}}
+    @page{size:A4;margin:18mm}@media print{body{font-size:11pt;background:white}.wrap{max-width:none;padding:0}header .wrap{min-height:20mm}.logo{width:28mm}.hero{background:white;color:var(--hejun-text);padding:12mm 0;border-top:2pt solid var(--hejun-brand);border-bottom:1pt solid var(--hejun-line)}h1{font-size:28pt}h2{font-size:18pt;break-after:avoid}h3{break-after:avoid}section{padding-top:7mm}.split{display:block}.table-scroll{overflow:visible}table{font-size:10pt}th{background:var(--hejun-sand);color:var(--hejun-text)}tr{break-inside:avoid}thead{display:table-header-group}footer{font-size:9pt}a{color:inherit}*{print-color-adjust:exact;-webkit-print-color-adjust:exact}}
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <header><div class="wrap"><img class="logo" src="../logos/hejun-logo-color.png" alt="和君"><span class="wordmark">HEJUN GROUP</span></div></header>
+  <div class="hero"><div class="wrap"><p class="eyebrow">项目材料</p><h1>项目名称</h1><p>在此说明这份材料的对象、目的和核心议题。替换为本项目已经确认的信息。</p></div></div>
+  <main class="wrap">
+    <section aria-labelledby="background"><h2 id="background">项目背景</h2><p class="lead">以明确的问题和证据说明本项目为何需要推进。</p><p>这里填写背景、研究范围及业务约束。保留资料的时间、单位与来源，不把历史材料中的数字作为当前项目事实。</p><div class="summary"><strong>核心判断</strong><p>填写有资料支持的主要结论。尚未核实的内容保留为待确认项。</p></div></section>
+    <section aria-labelledby="analysis"><h2 id="analysis">分析与建议</h2><div class="split"><div><h3>现状与问题</h3><p>填写现状及其证据，说明问题对项目目标的影响。</p></div><div><h3>建议与边界</h3><p>填写与问题对应的建议，保留适用条件及尚待验证的假设。</p></div></div></section>
+    <section aria-labelledby="plan"><h2 id="plan">工作安排</h2><div class="table-scroll" role="region" aria-label="工作安排表" tabindex="0"><table><caption>阶段与交付物</caption><thead><tr><th scope="col">阶段</th><th scope="col">工作内容</th><th scope="col">交付物</th></tr></thead><tbody><tr><th scope="row">研究与诊断</th><td>按本项目范围补充</td><td>按约定填写</td></tr><tr><th scope="row">方案与实施</th><td>按本项目范围补充</td><td>按约定填写</td></tr></tbody></table></div><p class="source">来源：填写实际资料名称、日期和口径。</p></section>
+  </main>
+  <footer><div class="wrap">项目名称 · 版本与日期待填写</div></footer>
+</body>
+</html>

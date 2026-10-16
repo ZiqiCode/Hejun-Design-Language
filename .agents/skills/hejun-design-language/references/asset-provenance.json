@@ -1,0 +1,100 @@
+{
+  "official_template_source_sha256": "8fe15e118c7547aa3118dd0aff5f54cc63a32efe9c18235741ff727239487fd2",
+  "assets": [
+    {
+      "path": "assets/backgrounds/official-cover.png",
+      "sha256": "41e21e89ec75de98be3a8366f93816675dceea9a915cf1159db136954f9060f7",
+      "bytes": 337673
+    },
+    {
+      "path": "assets/backgrounds/red-section.jpeg",
+      "sha256": "8226964a0317de2a20e31deab0d979c5742ff4b0004ec3ce87da99c0f1086031",
+      "bytes": 178382
+    },
+    {
+      "path": "assets/backgrounds/red-sidebar.jpeg",
+      "sha256": "94497db43a5326fab49eda095dc490486badbf49261868fcdaa64533e1c0593a",
+      "bytes": 52069
+    },
+    {
+      "path": "assets/logos/hejun-group-wordmark.png",
+      "sha256": "1352f6dcd02fe331e1584dfdb321da88b6dcf7b75eb71f9a63f048ee62c5f383",
+      "bytes": 4200
+    },
+    {
+      "path": "assets/logos/hejun-logo-color.png",
+      "sha256": "301baadb4ec3e4e94d75f31e218a879e6d7b7ed43b3f544eb21d38831028c06a",
+      "bytes": 13612
+    },
+    {
+      "path": "assets/previews/html-desktop.png",
+      "sha256": "05a651c7ff87313fcdb853a7309e38a73f3ea081bf1db195e07d9f655a686bd7",
+      "bytes": 127215
+    },
+    {
+      "path": "assets/previews/html-mobile.png",
+      "sha256": "61dd60a811c6eb34d991ea34dbc6b1caad55f208e2a053716c1dcf1bb6036b10",
+      "bytes": 116220
+    },
+    {
+      "path": "assets/previews/official-slide-1.png",
+      "sha256": "41e21e89ec75de98be3a8366f93816675dceea9a915cf1159db136954f9060f7",
+      "bytes": 337673
+    },
+    {
+      "path": "assets/previews/official-slide-2.png",
+      "sha256": "5238e9f1c170eabb1da7c8cf0d90975da53f4d22873cf2754084bbd22f3910a0",
+      "bytes": 73048
+    },
+    {
+      "path": "assets/previews/official-slide-3.png",
+      "sha256": "f2f7dc9f30d1fa63a3a02f813ef9455dfd399297982377b7032e3276020910af",
+      "bytes": 125051
+    },
+    {
+      "path": "assets/previews/official-slide-4.png",
+      "sha256": "5c504fb740e0969ac647111fc8b267b0b983c08ad7e69f5a6bb5b5fef95eb75e",
+      "bytes": 13089
+    },
+    {
+      "path": "assets/previews/official-slide-5.png",
+      "sha256": "807c5bfabfc8ef0f34a3fc297e72fd976f7df5422ec082d03a522f47d0e35e71",
+      "bytes": 140127
+    },
+    {
+      "path": "assets/previews/word-page-1.png",
+      "sha256": "f3059a962dd65a1bfb269fe513bd9adb29e5d8ff642e556e30cb07a88d944c8a",
+      "bytes": 51734
+    },
+    {
+      "path": "assets/previews/word-page-2.png",
+      "sha256": "ac381fc118d9d2c49a2f496acd262939127fa07b5917b4b06f60281e74fce29d",
+      "bytes": 55265
+    },
+    {
+      "path": "assets/templates/hejun-official-red-v2026.pptx",
+      "sha256": "8fe15e118c7547aa3118dd0aff5f54cc63a32efe9c18235741ff727239487fd2",
+      "bytes": 29501771
+    },
+    {
+      "path": "assets/templates/hejun-reference.pdf",
+      "sha256": "34091bb9ab5ec5d414d771d3389ccb5217f19937e05cfd15d9b2f6a31ed5283d",
+      "bytes": 224443
+    },
+    {
+      "path": "assets/templates/hejun-starter.docx",
+      "sha256": "db162277a03c74e61377ee761d5fa1fa232767f759390744d650d12c686e8167",
+      "bytes": 52029
+    },
+    {
+      "path": "assets/templates/hejun-starter.html",
+      "sha256": "a798895e0cb97560bfad59225406623a1ae582ddfde511b589ef649cdf0d4439",
+      "bytes": 5451
+    },
+    {
+      "path": "assets/tokens.json",
+      "sha256": "404f7aaadc3afd576a248965ea1899678ea08a7d48e5a0c3a362b8b0b2c825bc",
+      "bytes": 1926
+    }
+  ]
+}

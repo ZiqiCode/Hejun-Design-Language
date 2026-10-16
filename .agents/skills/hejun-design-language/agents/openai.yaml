@@ -1,0 +1,4 @@
+interface:
+  display_name: "和君设计语言"
+  short_description: "基于和君官方模板，统一制作和改版提案、研究报告、演示文稿与网页"
+  default_prompt: "用 $hejun-design-language 将这份资料制作成和君红风格的客户材料，保留事实并检查最终版式。"
