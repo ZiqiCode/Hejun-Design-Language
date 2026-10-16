@@ -48,3 +48,19 @@ python .agents/skills/hejun-design-language/scripts/build_standalone_html.py /ne
 - 辅助脚本回归现为 8 项通过，新增原版字体/许可散列和初始化时字体复制检查。
 - 本次没有验证 Word/PPT 的无系统安装字体加载或字体嵌入，不承诺所有 Office 阅读器免安装编辑。旧 Word starter 和 PDF 参考保留初版微软雅黑。
 - 详细浏览器及 PDF 证据见 `.agents/skills/hejun-design-language/references/font-validation.json`。
+
+## 2026-10-16 深圳信纸更新验证
+
+此更新取代前述初版通用 Word/PDF 模板。旧验证条目保留为历史记录，不代表当前模板仍采用旧背景或微软雅黑。
+
+- 用户原件与仓库保存的 `hejun-shenzhen-original.docx` SHA-256 一致；源文件未改动。页眉/页脚图片、XML 与关系部件在新 starter 中逐项字节一致。
+- 原信纸是一页 A4 空白文档；已用 Microsoft Word 导出底版并渲染查看。原上下正文边距会与图片范围重叠，制作起点只调整正文安全边距，保持背景位置与原图不变。
+- 新 Word starter 为两页，原生正文、标题和表格可编辑；Regular/Bold 完整 TTF 以 OOXML 标准混淆嵌入。反混淆后的字体字节与官方 TTF 完全一致，完整许可保留在 customXml 部件。
+- 本次未安装系统字体。通过 Microsoft Word 打开 starter 并导出验证 PDF，两页可见正文实际字体均为 HarmonyOS Sans SC/其 Bold 字重，没有静默替换为微软雅黑。Word 自身导出的 PDF 为子集字体，未将它作为完整嵌入的正式参考 PDF。
+- Word 两页逐页查看 PNG；页眉/页脚图像位置与原件一致，对页眉和页脚区域逐页做像素比对，均相同；正文与表格未覆盖信纸。
+- 正式 PDF 参考使用同一信纸独立排版，两页逐页查看；提取字体流，Regular/Bold 均与官方原 TTF 完全一致。字体许可作为附件保留，中文文字可搜索。
+- PDF helper 验证了纵向/横向混合输入每页安置到 A4 安全区，文字可搜索、基本书签页码保留；逐页背景区域像素与原信纸一致。重复处理、已有输出及带链接的输入均拒绝，未写入部分输出。
+- 辅助脚本回归：14 项通过；Skill frontmatter 检查通过；内部链接、资产散列与原件身份校验通过。
+- 未验证其他 Office 版本、在线编辑器、特殊分节/横向 Word、多页长表或带签名/表单 PDF。实际成品仍需逐页验收。当前 PDF helper 明确拒绝带链接、批注、表单、附件或签名的输入，应从可编辑源文件保留功能重建。
+
+详细几何与字体证据见 `.agents/skills/hejun-design-language/references/letterhead-validation.json`。

@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-16",
+  "source_sha256": "39497ea4603b102c44558815233d661a670f4a082cc83490efbab5030bbe509e",
+  "word_render_engine": "Microsoft Word",
+  "word_pages": 2,
+  "pdf_reference_engine": "PyMuPDF",
+  "pdf_pages": 2,
+  "background_parts_byte_identical": true,
+  "full_fonts_in_docx_verified_by_deobfuscation": true,
+  "full_fonts_in_pdf_verified_by_extraction": true,
+  "word_pdf_export_fonts_are_subsetted": true,
+  "pdf_reference_is_separately_composed_not_word_export": true,
+  "pages": [
+    {
+      "page": 1,
+      "letterhead_image_rects_pt": [
+        [
+          0.0,
+          0.9999847412109375,
+          595.0499877929688,
+          94.54998779296875
+        ],
+        [
+          0.0,
+          681.8997802734375,
+          597.4000244140625,
+          840.4497680664062
+        ]
+      ],
+      "visible_text_fonts": [
+        "HarmonyOS_Sans_SC",
+        "HarmonyOS_Sans_SC_Bold"
+      ],
+      "body_clear_of_background": true
+    },
+    {
+      "page": 2,
+      "letterhead_image_rects_pt": [
+        [
+          0.0,
+          0.9999847412109375,
+          595.0499877929688,
+          94.54998779296875
+        ],
+        [
+          0.0,
+          681.8997802734375,
+          597.4000244140625,
+          840.4497680664062
+        ]
+      ],
+      "visible_text_fonts": [
+        "HarmonyOS_Sans_SC",
+        "HarmonyOS_Sans_SC_Bold"
+      ],
+      "body_clear_of_background": true
+    }
+  ]
+}

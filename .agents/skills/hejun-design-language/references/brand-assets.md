@@ -8,8 +8,11 @@
 | backgrounds/red-section.jpeg | ppt/media/image8.jpeg，原字节提取 | 官方红色章节背景，含“和”字图形；按原比例放置 |
 | backgrounds/red-sidebar.jpeg | ppt/media/image4.jpeg，原字节提取 | 目录左侧红色竖栏 |
 | templates/hejun-official-red-v2026.pptx | 用户提供的五页官方模板，原字节保留 | 首选 PPT 起点，注意替换模板占位文字 |
-| templates/hejun-starter.docx | 本项目推导制作 | Word 排版示例，非原有官方 Word 模板；示例使用本次环境已安装的 Microsoft YaHei 替代字体 |
-| templates/hejun-reference.pdf | 从 Word starter 经 Microsoft Word 导出 | 两页排版参考，不替代可编辑来源 |
+| letterhead/hejun-shenzhen-original.docx | 用户提供的“和君信纸电子版（深圳）.docx”，原字节保留 | 所有 Word/PDF 的背景权威来源 |
+| letterhead/hejun-shenzhen-blank.pdf | 原信纸经 Microsoft Word 导出 | 一页 A4 PDF 底版 |
+| letterhead/header.jpeg、footer.jpeg | 原信纸的 word/media/image1.jpeg、image2.jpeg | 原字节提取，仅作为固定品牌背景，不重画文字 |
+| templates/hejun-starter.docx | 基于原信纸制作 | 安全正文区、可编辑段落/表格，完整嵌入鸿蒙 Regular/Bold 字体 |
+| templates/hejun-reference.pdf | 采用同一信纸的独立 PDF 示例 | 完整嵌入原版鸿蒙 Regular/Bold，不替代可编辑来源 |
 | templates/hejun-starter.html | 本项目推导制作 | 网页/屏幕报告起点，非原有官网代码 |
 
 路径相对于 `assets/`。源文件 SHA-256、页数和素材散列见 `source-inventory.json` 与 `asset-provenance.json`。

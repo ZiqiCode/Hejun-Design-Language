@@ -1,0 +1,139 @@
+{
+  "source_filename": "和君信纸电子版（深圳）.docx",
+  "source_sha256": "39497ea4603b102c44558815233d661a670f4a082cc83490efbab5030bbe509e",
+  "source_bytes": 138777,
+  "analysis_date": "2026-10-16",
+  "source_page_twips": [
+    11906,
+    16838
+  ],
+  "source_margins_twips": {
+    "top": 1440,
+    "bottom": 1440,
+    "left": 1800,
+    "right": 1800,
+    "header": 0,
+    "footer": 0
+  },
+  "safe_margins_twips": {
+    "top": 2200,
+    "bottom": 3600,
+    "left": 1800,
+    "right": 1800,
+    "header": 0,
+    "footer": 0
+  },
+  "safe_content_rect_pt": [
+    90,
+    110,
+    505.32,
+    661.92
+  ],
+  "source_header_rect_pt": [
+    0,
+    1,
+    595.05,
+    94.55
+  ],
+  "source_footer_rect_pt": [
+    0,
+    681.9,
+    597.4,
+    840.45
+  ],
+  "preserve_parts": [
+    "word/header1.xml",
+    "word/footer1.xml",
+    "word/_rels/header1.xml.rels",
+    "word/_rels/footer1.xml.rels",
+    "word/media/image1.jpeg",
+    "word/media/image2.jpeg"
+  ],
+  "parts": [
+    {
+      "part": "[Content_Types].xml",
+      "bytes": 1659,
+      "sha256": "abe73b3cd11b5229bf558a3c5810794b28c2faf87efe7b5aadea6d484e7b8aed"
+    },
+    {
+      "part": "_rels/.rels",
+      "bytes": 737,
+      "sha256": "514e1846381cb6bcfff105a4b0a17d666cf0ed1f0c120bff73b82226ab7ed977"
+    },
+    {
+      "part": "docProps/app.xml",
+      "bytes": 629,
+      "sha256": "d05a365e78b529530542ae907c7733e0b77108dc759470be68a8bf7f59e1e34c"
+    },
+    {
+      "part": "docProps/core.xml",
+      "bytes": 687,
+      "sha256": "e10c97ecf71340aa3c8c205a13b115066a52b854408d8a51491f25883e3f4dd2"
+    },
+    {
+      "part": "docProps/custom.xml",
+      "bytes": 533,
+      "sha256": "97ece959c4c9dff6a630f39a2ab25b2cf3c054d49377559de02b43d34956e71e"
+    },
+    {
+      "part": "word/_rels/document.xml.rels",
+      "bytes": 936,
+      "sha256": "2db28b74006c4630128bc4bb13bfc893effc412060f74276609efc7cd16b8a4f"
+    },
+    {
+      "part": "word/_rels/footer1.xml.rels",
+      "bytes": 290,
+      "sha256": "ccca8dda585f688e5b105cdfde8612dd6ebfcd0b9e44cf135f45eea5b2fbaa45"
+    },
+    {
+      "part": "word/_rels/header1.xml.rels",
+      "bytes": 290,
+      "sha256": "779c247d1b804331240a88219853bd68ebaf0b63d2ca583ce15a38e8995724b3"
+    },
+    {
+      "part": "word/document.xml",
+      "bytes": 2413,
+      "sha256": "4345860685e724d614fc635ae489f4c38c09de9b4a62eddb319ac1610004cf03"
+    },
+    {
+      "part": "word/fontTable.xml",
+      "bytes": 4303,
+      "sha256": "b78bbf15170cbd1e5f752640a77f375ea185ad5b79e94b152114a0a27b25d84b"
+    },
+    {
+      "part": "word/footer1.xml",
+      "bytes": 2548,
+      "sha256": "5fb6c41fcd1376b0702c2b7a66c10a7c0a3fd09f5c91b109ffd06edb9abea40a"
+    },
+    {
+      "part": "word/header1.xml",
+      "bytes": 2520,
+      "sha256": "5ff453abff631c571da7775b1e3712a53970d079dd122b97a8ee372137d7dab9"
+    },
+    {
+      "part": "word/media/image1.jpeg",
+      "bytes": 85987,
+      "sha256": "a8c035828b56413d6d8c346a45c49b4cd0cb6f056032080509997f2a079c1a67"
+    },
+    {
+      "part": "word/media/image2.jpeg",
+      "bytes": 38859,
+      "sha256": "ade9ccfbf9e730347a67448ce50bbe8e05af8f4b5a2e1170d2a6e5b7a37748fc"
+    },
+    {
+      "part": "word/settings.xml",
+      "bytes": 3068,
+      "sha256": "e925cc6b48c7acec82f031a55823e76f7431b83eddeda56db6576e77b5c12c9f"
+    },
+    {
+      "part": "word/styles.xml",
+      "bytes": 27370,
+      "sha256": "e8f0cc8564a11b6c41e910ebc4d54777af1b2252c0977b57182f9bb0d889093a"
+    },
+    {
+      "part": "word/theme/theme1.xml",
+      "bytes": 6436,
+      "sha256": "2157ebaa401af49c0c9b80ad88ccbad4dbe486136a0b3f4bddc77de976340c33"
+    }
+  ]
+}

@@ -52,6 +52,31 @@
       "bytes": 1577
     },
     {
+      "path": "assets/letterhead/footer.jpeg",
+      "sha256": "ade9ccfbf9e730347a67448ce50bbe8e05af8f4b5a2e1170d2a6e5b7a37748fc",
+      "bytes": 38859
+    },
+    {
+      "path": "assets/letterhead/header.jpeg",
+      "sha256": "a8c035828b56413d6d8c346a45c49b4cd0cb6f056032080509997f2a079c1a67",
+      "bytes": 85987
+    },
+    {
+      "path": "assets/letterhead/hejun-shenzhen-blank.pdf",
+      "sha256": "502d6e83cce085a796d4171df69592aa67b6831702d265c51c026e9b15275b3b",
+      "bytes": 203111
+    },
+    {
+      "path": "assets/letterhead/hejun-shenzhen-original.docx",
+      "sha256": "39497ea4603b102c44558815233d661a670f4a082cc83490efbab5030bbe509e",
+      "bytes": 138777
+    },
+    {
+      "path": "assets/letterhead/source.json",
+      "sha256": "690af6859aa76c99097589766194b4fd80c7b772d205473bcd87317b0fd6e4de",
+      "bytes": 3598
+    },
+    {
       "path": "assets/logos/hejun-group-wordmark.png",
       "sha256": "1352f6dcd02fe331e1584dfdb321da88b6dcf7b75eb71f9a63f048ee62c5f383",
       "bytes": 4200
@@ -70,6 +95,11 @@
       "path": "assets/previews/html-mobile.png",
       "sha256": "2314a9f3579d16279b1a4a9274024b5326b8a98b9cd012c8a8d28a907623bb0e",
       "bytes": 123352
+    },
+    {
+      "path": "assets/previews/letterhead-shenzhen.png",
+      "sha256": "1c0356d996b6b8a68706b24bbc38fe367c09e173ac74657aabd2615e4c0b181f",
+      "bytes": 208677
     },
     {
       "path": "assets/previews/official-slide-1.png",
@@ -97,14 +127,24 @@
       "bytes": 140127
     },
     {
+      "path": "assets/previews/pdf-letterhead-page-1.png",
+      "sha256": "631a4ce4226442bb04d4cf5a0745c6dfa03fdfba1bfb92698bc73b08d36f8572",
+      "bytes": 234173
+    },
+    {
+      "path": "assets/previews/pdf-letterhead-page-2.png",
+      "sha256": "730529bdbb13cd62f2f2a8d3094bbe90bae475232d8a336f8100b9056234fd75",
+      "bytes": 241471
+    },
+    {
       "path": "assets/previews/word-page-1.png",
-      "sha256": "f3059a962dd65a1bfb269fe513bd9adb29e5d8ff642e556e30cb07a88d944c8a",
-      "bytes": 51734
+      "sha256": "2c0f77fcf4b1541897484cae50544d01901f70c3e420b82fb2b6800a2734994f",
+      "bytes": 233562
     },
     {
       "path": "assets/previews/word-page-2.png",
-      "sha256": "ac381fc118d9d2c49a2f496acd262939127fa07b5917b4b06f60281e74fce29d",
-      "bytes": 55265
+      "sha256": "780f6b77ec2318bf45cbe0a4630593dfbfe73d931d950abef105c58058e0f8f4",
+      "bytes": 244076
     },
     {
       "path": "assets/templates/hejun-official-red-v2026.pptx",
@@ -113,13 +153,13 @@
     },
     {
       "path": "assets/templates/hejun-reference.pdf",
-      "sha256": "34091bb9ab5ec5d414d771d3389ccb5217f19937e05cfd15d9b2f6a31ed5283d",
-      "bytes": 224443
+      "sha256": "c79c14ba04a9eee99205e7742a0de205fed069ad775d59505030f24855d63780",
+      "bytes": 11389835
     },
     {
       "path": "assets/templates/hejun-starter.docx",
-      "sha256": "db162277a03c74e61377ee761d5fa1fa232767f759390744d650d12c686e8167",
-      "bytes": 52029
+      "sha256": "25f62ca42f56d2a3c0fc0ddf9e8804e6c318b3dcaca650152f0589939abd145f",
+      "bytes": 11287675
     },
     {
       "path": "assets/templates/hejun-starter.html",
@@ -128,8 +168,8 @@
     },
     {
       "path": "assets/tokens.json",
-      "sha256": "b3958f62c0d0596971e31a115ae34548dd648554a5ef4a486dbcc7be9d16d605",
-      "bytes": 2149
+      "sha256": "7c57456f6600c06ec8897d3118f553a80b7f22f2fd221d5fbdbf395319079ba1",
+      "bytes": 2601
     }
   ]
 }
